@@ -14,7 +14,9 @@
 
 
 .content-row{
-	overflow: hidden;
+	&:after{
+		.clear;
+	}
 	.settings-group{
 		float: left;
 		width: 48%;
@@ -24,5 +26,44 @@
 			float: right;
 			clear: none;
 		}
+	}
+}
+
+
+//	assembly line
+.ui-sortable-helper{
+	opacity:.7;
+}
+
+//	//	previews
+#available-bits{
+	position: relative;
+}
+
+#available-bits-inner{
+	position: relative;
+
+	.page-sectional{
+		position: relative;
+		float: left;
+		width: 194px;
+		height: 120px;
+		background: #eee;
+		margin-right: 8px;
+		text-align: center;
+	}
+
+	.page-row{
+		display: none;
+	}
+}
+
+
+//	//	actual assembly line
+#assembly-line{
+	position: relative;
+
+	.page-sectional > img{
+		display: none;
 	}
 }
