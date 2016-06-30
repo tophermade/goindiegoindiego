@@ -20,9 +20,9 @@
 
 
 		<header id="app-header">
-			<div class="app-inner">
 
-				<div id="app-user-nav">
+			<div id="app-user-nav">
+				<div class="app-inner">
 					<strong id="app-logo"><a href="#">IndieUp</a></strong>
 
 					<ul>
@@ -31,8 +31,10 @@
 						<li><a href="#">Logout</a></li>
 					</ul>
 				</div>
+			</div>
 
-				<div id="app-admin-nav">
+			<div id="app-admin-nav">
+				<div class="app-inner">
 					<ul>
 						<li><a href="#">Dash</a></li>
 						<li><a href="#">Pages</a></li>
@@ -41,14 +43,76 @@
 						<li><a href="#">Tooling</a></li>
 					</ul>
 				</div>
-
 			</div>
+
 		</header>
 
 
 		<div id="app-content">
+			<div class="app-inner">
+				<h1 id="content-title">Page Manager &raquo; About</h1>
 
-		</div>
+				<div class="content-row">
+					<div class="settings-group">
+						<div class="settings-group-item">
+							<label>Page Title</label>
+							<input type="text" />
+						</div>
+
+						<div class="settings-group-item">
+							<label>Page Template</label>
+							<select>
+								<option>Generic</option>
+								<option>Home</option>
+								<option>Feature</option>
+							</select>
+						</div>
+					</div><!-- e: settings-group -->
+
+					<div class="settings-group">
+						<div class="settings-group-item">
+							<label>Page Status</label>
+							<select>
+								<option>Draft</option>
+								<option>Published</option>
+							</select>
+						</div>
+						<div class="settings-group-item split">
+							<label>Page Slug</label>
+							<input type="text" />
+						</div>
+						<div class="settings-group-item split">
+							<label>Page Action</label>
+							<a href="#" class="button">Save</a>
+						</div>
+					</div><!-- e: settings-group -->
+				</div><!-- e: content row, settings -->
+
+
+				<div class="content-row">
+					<div id="available-bits">
+						<div id="available-bits-inner">
+							<div class="preview-bit">
+								this
+							</div>
+						</div>
+					</div>
+				</div><!-- e: available template parts -->
+
+
+				<div class="content-row">
+					<div id="assembly-line">
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+					</div>
+				</div><!-- e: where we do actual content editing, you know the important bits -->
+			</div><!-- e: app inner -->
+
+		</div><!-- app content -->
 
 
 	</div><!-- e: siteframe -->
@@ -57,6 +121,9 @@
 </div><!-- e: global -->
 
 <script src="lib/dev.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>
