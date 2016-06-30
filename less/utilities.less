@@ -1,0 +1,159 @@
+/* misc mixins */
+
+.box-sizing(@sizing: border-box){
+    -webkit-box-sizing: @sizing;
+    -moz-box-sizing: @sizing;
+    box-sizing: @sizing;
+}
+
+.shadow(@depth: 0 2px 4px rgba(0,0,0,.3)){
+    -webkit-box-shadow: @depth;
+    -moz-box-shadow: @depth;
+    -o-box-shadow: @depth;
+    box-shadow: @depth;
+}
+
+.gradient(@start: #eee, @end: #777) {
+    background: @start;
+    background-image: -moz-linear-gradient(top, @start, @end);
+    background-image: -ms-linear-gradient(top, @start, @end);
+    background-image: -o-linear-gradient(top, @start, @end);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(@start), to(@end));
+    background-image: -webkit-linear-gradient(top, @start, @end);
+    background-image: linear-gradient(top, @start, @end);
+}
+
+
+/* fonts */
+@font-face {
+	font-family: 'AvenirNextLTW01Bold';
+	src: url('../fonts/avenir-next-bold.eot');
+	src: url('../fonts/avenir-next-bold.eot') format('embedded-opentype'),
+	url('../fonts/avenir-next-bold.woff') format('woff'),
+	url('../fonts/avenir-next-bold.ttf') format('truetype'),
+	url('../fonts/avenir-next-bold.svg#AvenirNextLTW01BoldRegular') format('svg');
+}
+.avb{
+	font-family: "AvenirNextLTW01Bold", Helvetica, Arial, SansSerif, sans-serif;
+}
+
+@font-face {
+	font-family: 'AvenirNextLTW01Italic';
+	src: url('../fonts/avenir-next-italic.eot');
+	src: url('../fonts/avenir-next-italic.eot') format('embedded-opentype'),
+	url('../fonts/avenir-next-italic.woff') format('woff'),
+	url('../fonts/avenir-next-italic.ttf') format('truetype'),
+	url('../fonts/avenir-next-italic.svg#AvenirNextLTW01ItalicRegular') format('svg');
+}
+.avi{
+	font-family: "AvenirNextLTW01Italic", Helvetica, Arial, SansSerif, sans-serif;
+}
+
+@font-face {
+	font-family: 'AvenirNextLTW01Regular';
+	src: url('../fonts/avenir-next-regular.eot');
+	src: url('../fonts/avenir-next-regular.eot') format('embedded-opentype'),
+	url('../fonts/avenir-next-regular.woff') format('woff'),
+	url('../fonts/avenir-next-regular.ttf') format('truetype'),
+	url('../fonts/avenir-next-regular.svg#AvenirNextLTW01RegularRegular') format('svg');
+}
+.av{
+	font-family: "AvenirNextLTW01Regular", Helvetica, Arial, SansSerif, sans-serif;
+}
+
+@font-face {
+	font-family: 'AvenirNextW01Thin';
+	src: url('../fonts/avenir-next-thin.eot');
+	src: url('../fonts/avenir-next-thin.eot') format('embedded-opentype'),
+	url('../fonts/avenir-next-thin.woff') format('woff'),
+	url('../fonts/avenir-next-thin.ttf') format('truetype'),
+	url('../fonts/avenir-next-thin.svg#AvenirNextW01ThinRegular') format('svg');
+}
+.avt{
+	font-family: "AvenirNextW01Thin", Helvetica, Arial, SansSerif, sans-serif;
+}
+
+
+/* handy shortcuts */
+.true(@height: 20px){
+	height: @height;
+	line-height: @height;
+}
+
+.indent(@indent: -9999em){
+	text-indent: @indent;
+}
+
+.clear{/* for use on :after */
+	content: " ";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#global{
+	position: relative;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.global{
+	font-size: 1.4rem;
+}
+
+.inner{
+	position: relative;
+	margin: auto;
+	padding: 0 15px;
+
+	&:after{
+		.clear;
+	}
+}
+
+img{
+	max-width: 100%;
+}
+
+
+
+// vars
+@text: 		#3C3A37;
+@dark: 		#353230;
+@black: 	#1E1E1E;
+@snow:  	#807F7E;
+@blue: 		#0093D0;
+@blue:		#78A8FF;
+@orange: 	#FF5A00;
+@green:		#6EB43F;
+@green: 	#1EC659;
+@grey:		#C1BFBC;
+@gray:		#C1BFBC;
+
+// misc
+.button{
+	position: relative;
+	display: inline-block;
+	margin: auto;
+	.true(40px);
+	padding: 0 15px;
+	color: #fff;
+	font-size: 1.8rem;
+	background: @blue;
+	background: @green;
+	border-radius: 3px;
+	border-bottom: 2px solid darken(@green, 8);
+
+	&:hover{
+		opacity:.7;
+	}
+}
+
+a.button{
+	text-decoration: none;
+}
+
+*:hover{
+	transition: ease all .3s;
+}

@@ -1,0 +1,20 @@
+/* TEAM */
+Company: Work & Wit
+
+Lead: Topher Wilson
+Site: http://workandwit.com
+Twitter: @tophernwz
+Location: Idaho Falls, ID
+
+
+/* THANKS */
+Mel Choyce: The GPLv2 WordPress Dash Icons
+Site: https://choycedesign.com/
+
+
+
+/* SITE */
+Last update:
+Standards:
+Components:
+Software:
