@@ -1,10 +1,12 @@
-var availablePanels = $("#available-bits");
+var availablePanels		= $("#available-bits");
+var availableSorter		= $("#available-bits-inner");
+var assemblySorter		= $("#assembly-line");
 
 // previews for sectionals
 
 
 // sorting page sections
-$("#available-bits-inner").sortable({
+$(availableSorter).sortable({
 	connectWith: "#assembly-line",
 	helper: function (e, li) {
 		this.copyHelper = li.clone().insertAfter(li);
@@ -25,7 +27,7 @@ $("#available-bits-inner").sortable({
 	}
 });
 
-$("#assembly-line").sortable({
+$(assemblySorter).sortable({
 	receive: function (e, ui) {
 		ui.sender.data('copied', true);
 		console.log(e);
@@ -39,18 +41,18 @@ ContentTools.StylePalette.add([
 	new ContentTools.Style('Author', 'author', ['p'])
 ]);
 var editor = ContentTools.EditorApp.get();
-editor.init('[data-editable]', 'data-name')
-editor.start(console.log("s"));
+editor.init('[data-editable]', 'data-name');
+
 ContentEdit.Root.get().bind('mount', function (element) {
-	$("#available-bits-inner").sortable("disable");
-	$("#assembly-line").sortable("disable");
+	$(availableSorter).sortable("disable");
+	$(assemblySorter).sortable("disable");
 	$(availablePanels).css({
 		opacity: .3
 	});
 });
 ContentEdit.Root.get().bind('unmount', function (element) {
-	$("#available-bits-inner").sortable("enable");
-	$("#assembly-line").sortable("enable");
+	$(availableSorter).sortable("enable");
+	$(assemblySorter).sortable("enable");
 	$(availablePanels).css({
 		opacity: 1
 	});
