@@ -1,3 +1,5 @@
+var availablePanels = $("#available-bits");
+
 // previews for sectionals
 
 
@@ -28,4 +30,28 @@ $("#assembly-line").sortable({
 		ui.sender.data('copied', true);
 		console.log(e);
 	}
+});
+
+
+
+// content tools setup
+ContentTools.StylePalette.add([
+	new ContentTools.Style('Author', 'author', ['p'])
+]);
+var editor = ContentTools.EditorApp.get();
+editor.init('[data-editable]', 'data-name')
+editor.start(console.log("s"));
+ContentEdit.Root.get().bind('mount', function (element) {
+	$("#available-bits-inner").sortable("disable");
+	$("#assembly-line").sortable("disable");
+	$(availablePanels).css({
+		opacity: .3
+	});
+});
+ContentEdit.Root.get().bind('unmount', function (element) {
+	$("#available-bits-inner").sortable("enable");
+	$("#assembly-line").sortable("enable");
+	$(availablePanels).css({
+		opacity: 1
+	});
 });

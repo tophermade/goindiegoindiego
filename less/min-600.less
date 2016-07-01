@@ -62,8 +62,22 @@
 //	//	actual assembly line
 #assembly-line{
 	position: relative;
+	.page-sectional{
+		> img{
+			display: none;
+		}
 
-	.page-sectional > img{
-		display: none;
+		&.ui-sortable-placeholder{
+			height: 20px !important;
+			width: 100%;
+			margin: auto;
+			background: #ccc;
+			visibility: visible !important;
+			border-top: 10px solid #fff;
+			border-bottom: 10px solid #fff;
+			*{
+				display: none;
+			}
+		}
 	}
 }

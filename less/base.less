@@ -97,6 +97,10 @@ html, body{
 		padding-bottom: 12px;
 	}
 
+	#content-sticker{
+		position: relative;
+	}
+
 	.content-row{
 		position: relative;
 		padding: 12px;
@@ -104,6 +108,43 @@ html, body{
 		margin-bottom: 12px;
 		border: 1px solid #eee;
 	}
+
+		#tooling{
+			position: relative;
+
+			.ct-toolbox9{
+				position: absolute;
+				top: 72px !important;
+				left: -132px;
+				width: 130px;
+				display: none;
+			}
+
+			.ct-ignition--editing + .ct-toolbox9{
+				display: block;
+			}
+
+			.ct-widget.ct-ignition {
+				position: absolute;
+				top: 12px;
+				left:-64px;
+			}
+
+			.ct-widget .ct-ignition__button--cancel {
+				background: #e74c3c;
+				top: 0px;
+				left: -64px;
+			}
+
+			.ct-tool--undo,
+			.ct-tool--redo,
+			.ct-tool--indent,
+			.ct-tool--unindent,
+			.ct-tool--line-break,
+			.ct-tool--table{
+				display: none;
+			}
+		}
 
 		.settings-group{
 			position: relative;
@@ -169,3 +210,11 @@ html, body{
 				}
 			}
 
+#available-bits{
+	position: relative;
+	transition: all ease .3s;
+}
+
+#assembly-line{
+	min-height: 400px;
+}
