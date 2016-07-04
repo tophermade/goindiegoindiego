@@ -145,6 +145,26 @@ img{
 	border-radius: 3px;
 	border-bottom: 2px solid darken(@green, 8);
 
+	&.full{
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		text-align: center;
+	}
+
+	&.special{
+		background: #2e8ece;
+		border-bottom: 2px solid darken(#2e8ece, 8);
+	}
+
+	&.yikes{
+		.true(28px);
+		color: #fff;
+		font-size: 1.3rem;
+		background: #DF4F42;
+		border-bottom: 2px solid darken(#DF4F42, 8);
+	}
+
 	&:hover{
 		opacity:.7;
 	}
