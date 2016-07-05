@@ -1,0 +1,389 @@
+html, body{
+	position: relative;
+	font-size: 10px;
+	background: #f5f5f5;
+	color: #333333;
+	.av;
+}
+
+.app-inner{
+	position: relative;
+	margin: auto;
+	max-width: 960px;
+
+	&:after{
+		.clear;
+	}
+}
+
+
+//	header
+//		it's also kinda the nav but semantics aside, it's still semantic. wait?...
+#header{
+	position: relative;
+}
+
+	#app-logo{
+		float: left;
+
+		a{
+			float: left;
+			font-size: 2rem;
+			text-transform: lowercase;
+			color: #78A8FF;
+			color: #fff;
+			.avb;
+			.true(38px);
+		}
+	}
+
+	#app-user-nav{
+		position: relative;
+		background: #333;
+		font-size: 1.4rem;
+		overflow: hidden;
+		padding: 12px;
+
+		ul{
+			float: right;
+		}
+
+		li{
+			float: left;
+			padding-left: 10px;
+
+			&:first-of-type{
+				padding: 0;
+			}
+
+			a{
+				float: left;
+				.true(38px);
+				color: #999;
+			}
+		}
+	}
+
+
+	#app-admin-nav{
+		position: relative;
+		background: #fafafa;
+		border-bottom: 1px solid #ddd;
+		
+		a{
+			display: block;
+			.true(38px);
+			font-size: 1.7rem;
+			color: #333;
+			text-align: center;
+			padding: 0 8px;
+			font-weight: bold;
+		}
+	}
+
+
+
+
+
+#app-content{
+	position: relative;
+	padding: 20px 0;
+	font-size: 1.4rem;
+	line-height:1.5;
+}
+
+	#content-title{
+		font-size: 2.2rem;
+		padding-bottom: 12px;
+		line-height:34px;
+
+		.button{
+			float: right;
+			.true(32px);
+			font-size: 1.4rem;
+		}
+	}
+
+	#content-sticker{
+		position: relative;
+	}
+
+	.content-row{
+		position: relative;
+		padding: 12px;
+		background: #fff;
+		margin-bottom: 12px;
+		border: 1px solid #eee;
+		border-radius: 3px;
+	}
+
+		.row-article{
+			position: relative;
+			line-height:1.8;
+			font-size: 1.5rem;
+
+			&:after{
+				.clear;
+			}
+
+			p, ul, ol, dl{
+				padding-bottom: 1.5em;
+			}
+
+			h2{
+				font-size: 1.8rem;
+				font-weight: bold;
+			}
+
+			h3{
+				font-weight: bold;
+				font-size: 1.6rem;
+			}
+
+			a{
+				color: #1EC659;
+			}
+
+			.row-col{
+				float: left;
+				padding-bottom: 25px;
+
+				&.tri{
+					float: left;
+					width: 32%;// rabbit hole
+
+					&+.tri{
+						margin: 0 2%;
+
+						&+.tri{
+							margin:0;
+						}
+					}
+				}
+			}
+		}
+
+
+		.row-entries{
+			position: relative;
+			border: 1px solid #ddd;
+			text-align: left;
+
+			table{
+				width: 100%;
+				color: #666;
+			}
+
+			th{
+				font-weight: bold;
+				padding: 15px 0 15px 15px;
+			}
+
+			td{
+				padding: 12px 0 12px 15px;
+			}
+
+			tr:nth-of-type(odd){
+				td, th{
+					background: #eee;
+				}
+			}
+
+			a{
+				color: #1EC659;
+				font-weight: bold;
+				font-size: 1.5rem;
+			}
+		}
+
+
+		.row-navigation{
+			position: relative;
+			text-align: center;
+
+			li{
+				display: inline;
+				padding: 0 15px;
+			}
+
+			a{
+				color: #1EC659;
+			}
+		}
+
+
+		#post-editor{
+			position: relative;
+			margin-bottom: -8px;
+
+			textarea{
+				position: relative;
+				display: block;
+				margin-bottom:0;
+				width: 100%;
+				box-sizing: border-box;
+				padding: 18px;
+				border: 1px solid #ddd;
+				height:350px;
+			}
+		}
+
+
+		#tooling{
+			position: relative;
+
+			.ct-toolbox9{
+				position: absolute;
+				top: 72px !important;
+				left: -132px;
+				width: 130px;
+				display: none;
+			}
+
+			.ct-ignition--editing + .ct-toolbox9{
+				display: block;
+			}
+
+			.ct-widget.ct-ignition {
+				position: absolute;
+				top: 12px;
+				left:-64px;
+			}
+
+			.ct-widget .ct-ignition__button--cancel {
+				background: #e74c3c;
+				top: 0px;
+				left: -64px;
+			}
+
+			.ct-tool--undo,
+			.ct-tool--redo,
+			.ct-tool--indent,
+			.ct-tool--unindent,
+			.ct-tool--line-break,
+			.ct-tool--table{
+				display: none;
+			}
+		}
+
+		.settings-group{
+			position: relative;
+			overflow: hidden;
+
+			label{
+				display: block;
+				font-weight: bold;
+				padding-bottom: 4px;
+
+				em{
+					font-weight: normal;
+					display: block;
+					font-size: .9em;
+					color: #666;
+				}
+			}
+
+			input[type=text],
+			input[type=email],
+			input[type=password]{
+				position: relative;
+				display: block;
+				width: 100%;
+				box-sizing: border-box;
+				border: 1px solid #ddd;
+				.true(42px);
+				background: #fff;
+				text-indent: 10px;
+				color: #666;
+				font-size: 1.4rem;
+				.av;
+
+				&+input[type=text],
+				&+input[type=password],
+				&+.button{
+					margin-top: 6px;
+				}
+			}
+
+			span.file-wrap{
+				position: relative;
+				display: block;
+				width: 100%;
+				box-sizing: border-box;
+				border: 1px solid #ddd;
+				.true(42px);
+				background: #fff;
+				padding-left: 12px;
+
+				padding-top: 8px;
+				color: #666;
+				font-size: 1.4rem;
+				.av;
+
+				input{
+					position: relative;
+					width: 90%;
+					display: block;
+				}
+			}
+
+			textarea{
+				position: relative;
+				display: block;
+				width: 100%;
+				box-sizing: border-box;
+				border: 1px solid #ddd;
+				background: #fff;
+				color: #666;
+				font-size: 1.4rem;
+				padding: 10px;
+				min-height: 120px;
+				.av;
+			}
+
+			select{
+				position: relative;
+				display: block;
+				width: 100%;
+				box-sizing: border-box;
+				border: 1px solid #ddd;
+				.true(42px);
+				background: #fff;
+				text-indent: 10px;
+				color: #666;
+				font-size: 1.4rem;
+				.av;
+			}
+		}
+
+			.settings-group-item{
+				position: relative;
+				padding-bottom: 14px;
+				overflow: hidden;
+
+				&.split{
+					float: left;
+					width: 48%;
+
+					&+.split{
+						float: right;
+
+						&+.settings-group-item{
+							clear: both;
+						}
+					}
+				}
+
+				.button{
+					position: relative;
+				}
+			}
+
+#available-bits{
+	position: relative;
+	transition: all ease .3s;
+}
+
+#assembly-line{
+	min-height: 400px;
+}

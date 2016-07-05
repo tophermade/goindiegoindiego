@@ -1,0 +1,50 @@
+<template name="appLayout">
+	<div id="app-global" class="app-global">
+
+
+		<div id="app-frame">
+
+
+			<header id="app-header">
+
+				<div id="app-user-nav">
+					<div class="app-inner">
+						<strong id="app-logo"><a href="index.html#!watch">IndieUp</a></strong>
+
+						<ul>
+							<li><a href="settings.html#!watch">Settings</a></li>
+							<li><a href="account.html#!watch">Account</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="app-admin-nav">
+					<div class="app-inner">
+						<ul>
+							<li><a href="index.html#!watch">Dash</a></li>
+							<li><a href="pages.html#!watch">Pages</a></li>
+							<li><a href="posts.html#!watch">Posts</a></li>
+							<li><a href="templates.html#!watch">Templates</a></li>
+							<li><a href="tooling.html#!watch">Tooling</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</header>
+
+
+			<div id="app-content">
+				<div class="app-inner">
+
+					{{>yield}}
+
+				</div><!-- app inner -->
+			</div><!-- app content -->
+
+
+		</div><!-- e: siteframe -->
+
+
+	</div><!-- e: global -->
+</template>

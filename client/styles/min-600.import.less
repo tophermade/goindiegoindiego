@@ -1,0 +1,95 @@
+#app-admin-nav{
+
+	li{
+		float: left;
+		padding-right: 20px;
+	}
+
+	a{
+		float: left;
+		.true(60px);
+		font-size: 1.5rem;
+	}
+}
+
+
+.content-row{
+	&:after{
+		.clear;
+	}
+	.settings-group{
+		float: left;
+		width: 48%;
+		clear: both;
+
+		&.full{
+			float: none;
+			width: 100%;
+		}
+
+		&:nth-of-type(even){
+			float: right;
+			clear: none;
+		}
+	}
+}
+
+
+//	assembly line
+.ui-sortable-helper{
+	opacity:.7;
+}
+
+//	//	previews
+#available-bits{
+	position: relative;
+	height: 120px;
+	overflow-y: scroll;
+}
+
+#available-bits-inner{
+	position: relative;
+	overflow: hidden;
+
+	.page-sectional{
+		position: relative;
+		float: left;
+		width: 194px;
+		height: 120px;
+		background: #eee;
+		margin: 0 15px;
+		text-align: center;
+
+		&.ui-sortable-placeholder{
+			display: none;
+		}
+	}
+
+	.page-row{
+		display: none;
+	}
+}
+
+
+//	//	actual assembly line
+#assembly-line{
+	position: relative;
+	.page-sectional{
+		> img{
+			display: none;
+		}
+
+		&.ui-sortable-placeholder{
+			height: 20px !important;
+			width: 100%;
+			margin: auto;
+			background: #ccc;
+			visibility: visible !important;
+			border-top: 10px solid #fff;
+			border-bottom: 10px solid #fff;
+			*{
+				display: none;
+			}
+		}
+	}
+}
