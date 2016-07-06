@@ -1,0 +1,59 @@
+<template name="postsSingleTemplate">
+	<h1 id="content-title">Blog &raquo; Post Editor</h1>
+
+
+	<div id="blog-editor">
+		<div id="blog-editor-content">
+			<div class="content-row">
+				<div class="settings-group full">
+					<div class="settings-group-item">
+						<label>Post Title</label>
+						<input type="text" />
+					</div>
+				</div><!-- e: settings-group -->
+
+				<div class="settings-group full">
+					<div class="settings-group-item">
+						<label>Post Editor</label>
+						<div id="post-editor">
+							<textarea></textarea>
+						</div>
+					</div>
+				</div><!-- e: settings-group -->
+			</div><!-- e: leading settings -->
+		</div>
+
+		<div id="blog-editor-settings">
+			<div class="content-row">
+
+				<div class="settings-group">
+					<div class="settings-group-item">
+						<label>Post Template</label>
+						<select>
+							<option>Generic</option>
+							<option>Home</option>
+							<option>Feature</option>
+						</select>
+					</div>
+
+					<div class="settings-group-item">
+						<label>Post Status</label>
+						<select>
+							<option>Draft</option>
+							<option>Published</option>
+						</select>
+					</div>
+
+					<div class="settings-group-item">
+						<label>Post Slug</label>
+						<input type="text" />
+					</div>
+					<div class="settings-group-item">
+						<label>Post Action</label>
+						<a href="#" class="button">Save</a>
+					</div>
+				</div><!-- e: settings-group -->
+			</div><!-- e: content row, settings -->
+		</div>
+	</div><!-- e: blog editor -->
+</template>
