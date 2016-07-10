@@ -1,0 +1,66 @@
+<template name="templatesSingleTemplate">
+	<h1 id="content-title">Template Creator &raquo; Edit</h1>
+
+	<div class="content-row">
+		<div class="settings-group">
+			<div class="settings-group-item">
+				<label>Template Title</label>
+				<input type="text" />
+			</div>
+		</div>
+
+		<div class="settings-group">
+			<div class="settings-group-item">
+				<label>Background Image</label>
+				<span class="file-wrap">
+					<input type="file" />
+				</span>
+			</div>
+			<div class="settings-group-item">
+				<label>Template Action</label>
+				<a href="#" class="button">Save</a>
+			</div>
+		</div><!-- e: settings-group -->
+	</div><!-- e: content row, settings -->
+
+
+	<div id="content-sticker">
+		<div class="content-row">
+			<div id="available-bits">
+				<div id="available-bits-inner">
+					<div class="page-sectional">
+						<img src="img/temp.png" alt="" />
+						<div class="page-row" data-editable data-name="main-content">
+							<p>this</p>
+						</div>
+					</div>
+					<div class="page-sectional">
+						<img src="img/temp.png" alt="" />
+						<div class="page-row" data-editable data-name="main-content">
+							<p>that</p>
+						</div>
+					</div>
+					<div class="page-sectional">
+						<img src="img/temp.png" alt="" />
+						<div class="page-row" data-editable data-name="main-content">
+							<p>the other</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- e: available template parts -->
+
+
+		<div id="tooling">
+			<div id="tool-actions"></div>
+		</div>
+	</div><!-- universally sticky div -->
+
+
+	<div class="content-row">
+
+		<div id="assembly-line">
+			<div style="display: none"><!-- for insert after --></div>
+		</div>
+	</div><!-- e: where we do actual content editing, you know the important bits -->
+</template>

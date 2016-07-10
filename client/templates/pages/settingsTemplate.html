@@ -1,0 +1,56 @@
+<template name="settingsTemplate">
+	<h1 id="content-title">Settings</h1>
+
+	<div class="content-row">
+		<div class="settings-group">
+			<h2 class="group-title">General Settings</h2>
+			<div class="settings-group-item">
+				<label>Site Title</label>
+				<input type="text" />
+			</div>
+			<div class="settings-group-item">
+				<label>Site Description</label>
+				<textarea></textarea>
+			</div>
+			<div class="settings-group-item">
+				<label>Allow Promotion <em>Promoted sites are featured in our examples and are frequently on our homepage.</em></label>
+				<select>
+					<option>Yes please!</option>
+					<option>No chance Jack</option>
+				</select>
+			</div>
+			<div class="settings-group-item">
+				<label>Your Domain <em>If not set, your default domain (sitename.indieup.site) will be used.</em></label>
+				<input type="text" />
+			</div>
+		</div>
+
+
+		<div class="settings-group">
+			<h2 class="group-title">Discussion Settings</h2>
+			<div class="settings-group-item">
+				<label>Enable Blog Comments</label>
+				<select>
+					<option>Yeah, let's do it</option>
+					<option>Commentators Suck, Good Riddance!</option>
+				</select>
+			</div>
+			<div class="settings-group-item">
+				<label>Disquss Key</label>
+				<input type="text" />
+			</div>
+			<h2 class="group-title">Site Display Settings</h2>
+			<div class="settings-group-item">
+				<label>Homepage Selection</label>
+				<select>
+					<option>Home Title Page</option>
+					<option>Blog Post Index</option>
+				</select>
+			</div>
+			<div class="settings-group-item">
+				<label>Settings Action</label>
+				<a href="#" class="button">Save</a>
+			</div>
+		</div><!-- e: settings-group -->
+	</div><!-- e: content row, settings -->
+</template>

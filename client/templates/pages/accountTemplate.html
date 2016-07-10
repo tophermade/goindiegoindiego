@@ -1,0 +1,64 @@
+<template name="accountTemplate">
+	<h1 id="content-title">Account</h1>
+
+
+	<div id="account">
+		<div id="account-sidebar">
+			<div class="content-row">
+				<div class="settings-group">
+					<div class="settings-group-item">
+						<label>Change Password</label>
+						<input type="text" placeholder="New Password" />
+						<input type="text" placeholder="Repeat Password" />
+						<a href="#" class="button full">Change Password</a>
+					</div>
+				</div>
+			</div>
+		</div><!-- e: account sidebar -->
+
+		<div id="account-content">
+			<div class="content-row">
+
+				<div class="settings-group">
+					<div class="settings-group-item">
+						<label>Your Name</label>
+						<input type="text" />
+					</div>
+					<div class="settings-group-item">
+						<label>Username</label>
+						<input type="text" />
+					</div>
+					<div class="settings-group-item">
+						<label>@twitter</label>
+						<input type="text" />
+					</div>
+				</div>
+				<div class="settings-group">
+					<div class="settings-group-item">
+						<label>Email Address</label>
+						<input type="text" />
+					</div>
+					<div class="settings-group-item">
+						<label>Display As</label>
+						<select>
+							<option>Full Name</option>
+							<option>User Name</option>
+						</select>
+					</div>
+					<div class="settings-group-item">
+						<label>Save Settings</label>
+						<a href="#" class="button full">Save</a>
+					</div>
+				</div><!-- e: settings-group -->
+			</div><!-- e: content row, settings -->
+
+			<div class="content-row">
+				<div class="row-article">
+					<h2>Manage Account</h2>
+					<p>You can <a href="#">terminate your account</a> in this area. Your site will continue as usual until the end of the current period (ending June 25th), and then will be removed.</p>
+					<!--<p><a href="#" class="button yikes">Close Account</a></p>-->
+				</div>
+			</div>
+		</div><!-- e: account content -->
+	</div><!-- e: blog editor -->
+</template>

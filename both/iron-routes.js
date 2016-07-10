@@ -9,6 +9,14 @@ Router.route("/", function(){
 	this.render("dashTemplate");
 });
 
+Router.route("/settings", function(){
+	this.render("settingsTemplate");
+});
+
+Router.route("/account", function(){
+	this.render("accountTemplate");
+});
+
 
 // page routes
 Router.route("/pages/", function(){
@@ -27,4 +35,14 @@ Router.route("/posts/", function(){
 
 Router.route("/posts/:id", function(){
 	this.render("postsSingleTemplate");
+});
+
+
+// template routes
+Router.route("/templates/", function(){
+	this.render("templatesIndexTemplate");
+});
+
+Router.route("/templates/:id", function(){
+	this.render("templatesSingleTemplate");
 });
