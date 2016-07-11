@@ -18,6 +18,12 @@ Router.route("/account", function(){
 });
 
 
+// login / out
+Router.route("/login/", function(){
+	this.render("loginTemplate");
+});
+
+
 // page routes
 Router.route("/pages/", function(){
 	this.render("pagesIndexTemplate");
